@@ -1,0 +1,37 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label="a_mean_x <= 0.381\ngini = 0.83\nsamples = 4000\nvalue = [660, 572, 523, 721, 766, 758]\nclass = 5", fillcolor="#ffffff"] ;
+1 [label="gini = 0.0\nsamples = 758\nvalue = [0, 0, 0, 0, 0, 758]\nclass = 6", fillcolor="#e5399d"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="a_std_x <= 0.094\ngini = 0.796\nsamples = 3242\nvalue = [660, 572, 523, 721, 766, 0]\nclass = 5", fillcolor="#fdfbff"] ;
+0 -> 2 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+3 [label="a_mean_y <= -0.07\ngini = 0.499\nsamples = 1485\nvalue = [0, 0, 0, 719, 766, 0]\nclass = 5", fillcolor="#f7f3fd"] ;
+2 -> 3 ;
+5 [label="gini = 0.183\nsamples = 726\nvalue = [0, 0, 0, 74, 652, 0]\nclass = 5", fillcolor="#8f4fe8"] ;
+3 -> 5 ;
+6 [label="g_std_x <= 0.021\ngini = 0.255\nsamples = 759\nvalue = [0, 0, 0, 645, 114, 0]\nclass = 4", fillcolor="#5caeea"] ;
+3 -> 6 ;
+15 [label="gini = 0.109\nsamples = 573\nvalue = [0, 0, 0, 540, 33, 0]\nclass = 4", fillcolor="#45a3e7"] ;
+6 -> 15 ;
+16 [label="gini = 0.492\nsamples = 186\nvalue = [0.0, 0.0, 0.0, 105.0, 81.0, 0.0]\nclass = 4", fillcolor="#d2e9f9"] ;
+6 -> 16 ;
+4 [label="g_mean_x <= 0.13\ngini = 0.664\nsamples = 1757\nvalue = [660, 572, 523, 2, 0, 0]\nclass = 1", fillcolor="#fdf6f0"] ;
+2 -> 4 ;
+7 [label="a_max_x <= 1.813\ngini = 0.599\nsamples = 1351\nvalue = [658, 171, 520, 2, 0, 0]\nclass = 1", fillcolor="#fbeade"] ;
+4 -> 7 ;
+9 [label="g_mean_x <= -0.178\ngini = 0.432\nsamples = 828\nvalue = [600, 157, 69, 2, 0, 0]\nclass = 1", fillcolor="#eeac7c"] ;
+7 -> 9 ;
+11 [label="gini = 0.0\nsamples = 44\nvalue = [0, 0, 44, 0, 0, 0]\nclass = 3", fillcolor="#39e581"] ;
+9 -> 11 ;
+12 [label="a_max_y <= 0.024\ngini = 0.373\nsamples = 784\nvalue = [600.0, 157.0, 25.0, 2.0, 0.0, 0.0]\nclass = 1", fillcolor="#eda673"] ;
+9 -> 12 ;
+13 [label="gini = 0.492\nsamples = 127\nvalue = [40, 81, 5, 1, 0, 0]\nclass = 2", fillcolor="#d1f3a2"] ;
+12 -> 13 ;
+14 [label="gini = 0.259\nsamples = 657\nvalue = [560, 76, 20, 1, 0, 0]\nclass = 1", fillcolor="#e9965a"] ;
+12 -> 14 ;
+10 [label="gini = 0.243\nsamples = 523\nvalue = [58, 14, 451, 0, 0, 0]\nclass = 3", fillcolor="#58e995"] ;
+7 -> 10 ;
+8 [label="gini = 0.024\nsamples = 406\nvalue = [2, 401, 3, 0, 0, 0]\nclass = 2", fillcolor="#9ee53b"] ;
+4 -> 8 ;
+}
